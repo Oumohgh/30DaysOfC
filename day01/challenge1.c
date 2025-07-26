@@ -21,7 +21,7 @@ int main(){
     printf("====Afichage de votre informations :=====");
     printf("\nVotre Nom :%s",&n);
     printf("\nVotre prenom :%s",&prenom);
-    printf("\nVotre age%d",&age);
+    printf("\nVotre age: %d",age);
     printf("\nVotre email: %s",&email);
     printf("\nVotre sexe :%s",&sexe);
 return 0;
