@@ -1,41 +1,50 @@
 #include<stdio.h>
 int main (){
     int choix;
-    long n;
-    printf("Enter le nombre d annees ");
-    scanf("%.2ld",&n);
-    do
-    {
-        printf("--Entrer votre choix de covertir: ");
-        printf("1-convertir en mois");
-        printf("2-convertir en jours");
-        printf("3-convertir en heures");
-        printf("4-convertir en minutes");
-        printf("5-convertir en secondes");
-        printf("6-quitter");
+    long int  n;
+    printf("Enter  annees: ");
+        scanf("%ld",&n);
+     printf("\n----Menu---");
+      
+       printf("\n1-convertir en mois:");
+        printf("\n2-convertir en jours:");
+        printf("\n3-convertir en heures:");
+        printf("\n4-convertir en minutes:");
+        printf("\n5-convertir en secondes:");
+        printf("\nChoisir un choix :");
         scanf("%d",&choix);
+        
         switch (choix)
         {
-        case '1':
-            printf("converstion de %ld  en mois est %ld",n,12*n);
+        case 1:
+            printf("\nconverstion de %ld  en mois est %ld",n,12*n);
             break;
-         case '2':
-             printf("converstion de %ld en jours est %ld",n,365*n);
+         case 2:
+         if((n % 4 == 0 && n % 100 != 0) || (n % 400 ==0)){
+          printf("\nconverstion de %ld en jours est %ld",n,366*n);
+         }else
+             printf("\nconverstion de %ld en jours est %ld",n,365*n);
             break;
-           case '3':
-             printf("converstion de %ld en heures est %ld",n,8760*n);
+          case 3:
+           if((n % 4 == 0 && n % 100 != 0) || (n % 400 ==0)){
+            printf("\nconverstion de %ld en heures est %ld",n,8784*n);
+           }else
+             printf("\nconverstion de %ld annes en heures est %ld",n,8760*n);
             break;
-             case '4':
-             printf("converstion de %ld en minutes est %ld",n,525600*n);
+          case 4:
+             if((n % 4 == 0 && n % 100 != 0) || (n % 400 ==0)){
+            printf("\nconverstion de %ld en  minutes est %ld",n,527040*n);
+            }else
+             printf("\nconverstion de %ld en minutes est %ld",n,525600*n);
             break;
-            case '5':
-             printf("converstion de %ld en minutes est %ld",n,31536000*n);
-            break;
-        default:
-        printf("veuillez entrer un choix");
-        
-        }
-        
-    } while (choix != 0);
+          case 5:
+             if((n % 4 == 0 && n % 100 != 0) || (n % 400 ==0)){
+              printf("\nconverstion de %ld en secondes est %ld",n,31622400*n);
+             }else
+             printf("\nconverstion de %ld en secondes est %ld",n,31536000*n);
+            break;    
+        default: printf("invalid choix");
+        break;
+        }  
  return 0;   
 }
