@@ -6,6 +6,7 @@ int main (){
     while(n>0){
         rem =n%2;
         n=n/2;
+        
     }
 
 

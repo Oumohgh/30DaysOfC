@@ -41,7 +41,7 @@ Deux nombres réels, a et b, sont saisis au clavier. Calculez et affichez a + b,
 
 * 1er nombre : pondération 2
 * 2ème nombre : pondération 3
-* 3ème nombre : pondération 5
+* 3ème nombre : pondération 
 
 
 ### Challenge 8 : Calcul de la moyenne géométrique
@@ -57,7 +57,6 @@ Formule :
 ```
 Distance = √((x2-x1)² + (y2-y1)² + (z2-z1)²)
 ```
-
 ### Challenge 10 : Volume d'une sphère
 Écrivez un programme pour trouver le volume d'une sphère. Prenez le rayon de la sphère en entrée de l'utilisateur.
 Formule pour le volume d'une sphère :
